@@ -17,10 +17,10 @@ function convertToRoman(num) {
 
   //your code here
 	let result ='';
-	for(let i =0;i<12;i++){
+	for(let i =0;i<13;i++){
 		const[symbol,val]=obj[i]
 		while(num>=val){
-			result+=result+symbol
+			result=result+symbol
 			num-=val
 		}
 	}
